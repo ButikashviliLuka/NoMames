@@ -10,6 +10,7 @@ body,html{
 	background-image: url(https://www.travelcontinuously.com/wp-content/uploads/2019/02/cancel-travel-plans-jords-journal-travel-continuously-1140x660.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	animation: slide 20s infinite;
 	position: relative;
 }
@@ -45,27 +46,166 @@ li{
 		background-image: url(https://st2.depositphotos.com/1875497/10960/i/950/depositphotos_109607602-stock-photo-beautiful-coconut-palm-trees-on.jpg);
 	}
 }
+.index-section{
+	margin: 50px 30px;
+	border: 2px solid blue;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.index-p{
+	font-size: 20px;
+}
 /*end main page*/
+.airplain{
+	width: 400px;
+	height: 400px;
+	float: right;
+	animation: airplain-animation 2s infinite;
+}
+
+
+@keyframes airplain-animation{
+	0%{
+		margin-right: 0;
+	}
+	20%{
+		margin-right: 20%;
+	}
+	40%{
+		margin-right: 40%;
+	}
+	60%{
+		margin-right: 60%;
+	}
+	80%{
+		margin-left: 80%;
+	}
+	100%{
+		margin-left: 100%;
+	}
+}
+
+
+
+/*............*/
+/*card effect*/
+
+/*.offers-h1{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 30px;
+}*/
+.section-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #F8EFBA;
+	padding: 5em 5em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.div-box{
+	margin-top: 50px;
+	width: 350px;
+	height: 450px;
+	background-color: #95a5a6;
+	border-radius: 10px;
+}
+.thailand-img{
+	width: 100%;
+	height: 250px;
+	border-radius: 10px;
+}
+.thailand-h1{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.thailand-p{
+	font-size: 18px;
+	padding: 10px 10px;
+	text-align: center;
+}
+.thailand-buttom{
+	background-image: linear-gradient(to left, #C4E538, #009432, #C4E538);
+	transition: 0.6s;
+}
+.japan-buttom{
+	background-image: linear-gradient(to left, #FDA7DF, #9980FA, #FDA7DF);
+	transition:0.6s;
+}
+.buttom-main{
+	border-radius: 4px;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 50%;
+	transform: translate(-50%);
+	cursor: pointer;
+	background-size: 200%;
+}
+.china-buttom{
+	background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312);
+	transition: 0.6s;
+}
+.thailand-buttom:hover,
+.japan-buttom:hover,
+.china-buttom:hover{
+	background-position: right;
+}
+/*Footer*/
+.main-footer1-div{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.footer1{
+	width: 100%;
+}
+.footer1-h1{
+	text-align: center;
+	font-size: 40px;
+	padding-top: 50px;
+}
+.footer1-form{
+	padding-top: 10px;
+}
+.form-input{
+	display: block;
+	width: 400px;
+	margin: 16px 100px;
+	border:0;
+	background: #111;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+}
+.form-input:hover{
+	box-shadow: 0 0 10px 4px #34495e;
+}
+.devider{
+	height: 350px;
+	width: 5px;
+	background: black;
+}
+.icon-div{
+	margin-top: 10px;
+}
+iframe{
+	margin-top: 20px;
+}
+
+
+
+/*end card effect*/
+
+.displain-inline-block{
+	display: inline-block;
+}
 
 
 
@@ -85,7 +225,14 @@ li{
 
 
 
-.contact-footer{
+
+
+
+
+
+
+
+/*.contact-footer{
 	background-color: #3d5c5c;
 	width: 100%;
 	height: 500px;
@@ -139,7 +286,7 @@ input:focus{
 }
 iframe{
 	margin-right: 30px;
-}
+}*/
 
 
 
