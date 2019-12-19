@@ -7,7 +7,7 @@ body,html{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background-image: url(https://www.go4travelblog.com/app/uploads/2019/05/asia-travel.jpg);
+	background-image: url(https://www.nexusholidays.ca/Upload/images/line_pic/201902/1551131719.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -59,7 +59,6 @@ li{
 
 .about-us{
 	width: 100%;
-	margin-top: 40px;
 }
 .about-us h1{
 	font-size: 40px;
@@ -113,13 +112,20 @@ li{
 	font-size: 25px;
 	margin-bottom: 30px;
 }*/
+.offers-h1{
+	margin: 40 0px;
+	text-align: center;
+	font-size: 25px;
+}
 .section-box{
 	width: 100%;
+	background-color: #F8EFBA;
+	padding: 5em 5em;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	background-color: #F8EFBA;
-	padding: 5em 5em;
+}
+.display-flex{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -175,32 +181,12 @@ li{
 .china-buttom:hover{
 	background-position: right;
 }
-.india-div{
-	position: relative;
-}
-.india-div img{
-	width: 100%;
-	height: 450px;
-}
-.india-div p{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 25px;
-	text-align: center;
-	color: white;
-	font-weight: bolder;
-	display: none;
-	animation: all 2s infinite;
-}
-.india-div p:hover{
-	display: block;
-}
+
 /*Footer*/
 .main-footer1-div{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	margin-top: 50px;
 }
 .footer1{
@@ -258,6 +244,72 @@ iframe{
 
 
 
+
+
+
+/*about us*/
+.about-us{
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	background: #17c0eb;
+}
+.about-us h1{
+	font-size: 40px;
+	text-align: center;
+}
+.underliner{
+	width: 145px;
+	height: 4px;
+	background: black;
+	margin-left: 50%;
+	transform: translate(-50%);
+	margin-top: 5px;
+}
+.about-us p{
+	margin-top: 40px;
+	font-size: 24px;
+	margin-left: 50px;
+}
+
+
+
+/*end about us */
+
+/*question section*/
+.questions-section{
+	padding-top: 50px;
+	width: 100%;
+	background: #aaa69d;
+}
+.questions-section h2{
+	text-align: center;
+	font-size: 30px;
+
+}
+.questions-section .underliner{
+	margin-bottom: 50px;
+}
+.question-div2{
+	width: 600px;
+	height: 150px;
+	background: #ecf0f1;
+	margin-bottom: 35px;
+	padding: 30px 30px;
+	border-radius: 8px;
+}
+.question-div2 h1{
+	font-size: 23px;
+	color: #7f8c8d;
+	font-weight: bolder;
+
+}
+.question-div2 p{
+	margin-top: 20px;
+	font-size: 15px;
+	color: #95a5a6;
+}
+/*end question section*/
 
 
 
