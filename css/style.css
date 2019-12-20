@@ -1,4 +1,4 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 
 body,html{
 	width: 100%;
@@ -13,6 +13,9 @@ html{
 .displain-inline-block{
 	display: inline-block;
 }
+.d-block{
+	display: block;
+}
 /*start header*/
 .header{
 	width: 100%;
@@ -20,6 +23,7 @@ html{
 	position: fixed;
 	background: #7ed6df;
 	z-index: 99;
+	padding-top: 17px;
 }
 .header-div{
 	display: flex;
@@ -62,6 +66,7 @@ html{
 	background-attachment: fixed;
 	/*animation: slide 20s infinite;*/
 	position: relative;
+	z-index: 20;
 }
 .main-page-p{
 	position: absolute;
@@ -78,13 +83,79 @@ html{
 }
 
 
-li{
-	text-align: center;
-	margin-top: 15px;
+
+
+.land-page-form{
+	z-index: 40;
+	background: white;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 1200px;
+	height: 130px;
+	border:1px solid white;
+	box-shadow: 0 2px 4px #403131;
 }
-.span{
+.land-page-div{
+	display: flex;
+	justify-content: space-between;
+}
+.find-adventure{
+	padding-top: 20px;
+	padding-left:20px;
+	
+	font-size: 20px;
 	text-transform: uppercase;
-	color: red;
+}
+.find-adventure input{
+	margin-top: 10px;
+	width: 170px;
+	height: 35px;
+	/*background: gray;*/
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 15px;
+}
+.activity{
+	
+	padding-top: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.activity select{
+	margin-top: 10px;
+	width: 170px;
+	height: 35px;
+	/*background: gray;*/
+	font-size: 15px;
+}
+.departs-between{
+	
+	padding-top: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.departs-between input{
+	margin-top: 10px;
+	width: 130px;
+	height: 35px;
+	/*background: gray;*/
+	font-size: 15px;
+}
+
+
+
+.landing-page-buttom{
+	margin-top: 26px;
+	margin-right: 100px;
+}
+.landing-page-buttom button{
+	width: 150px;
+	height: 50px;
+	background: #57bfcf;
+	border-radius: 10px;
 }
 
 
@@ -185,7 +256,7 @@ li{
 }
 .thailand-p{
 	font-size: 18px;
-	padding: 10px 10px;
+	padding: 5px 10px;
 	text-align: center;
 }
 .thailand-buttom{
@@ -225,6 +296,22 @@ li{
 	-o-transition: 0.6s;
 	transition: 0.6s;
 }
+.South-Korea-Buttom{
+	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
+	background-image: -o-linear-gradient(right, #12CBC4, #0652DD, #12CBC4);
+	background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+}
+.Philippines-buttom{
+	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
+	background-image: -o-linear-gradient(right, #12CBC4, #0652DD, #12CBC4);
+	background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+}
 .india-buttom{
 	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
 	background-image: -o-linear-gradient(right, #12CBC4, #0652DD, #12CBC4);
@@ -236,6 +323,8 @@ li{
 .thailand-buttom:hover,
 .japan-buttom:hover,
 .china-buttom:hover,
+.South-Korea-Buttom:hover,
+.Philippines-buttom:hover,
 .india-buttom:hover{
 	background-position: right;
 }

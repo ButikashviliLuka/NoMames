@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="decription" content="TravelToAsia">
+
+	<meta name="google" content="notranslate">
 	<title>Main page</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -12,6 +17,7 @@
 	<header class="header">
 		<div class="header-div">
 			<nav class="navigation">
+				<!-- <h1>TravelToAsia</h1> -->
 				<ul class="nav-ul">
 					<li class="nav-li"><a href="#about-us">About Us</a></li>
 					<li class="nav-li"><a href="#Quick-offers">Our Offers</a></li>
@@ -19,14 +25,39 @@
 					<li class="nav-li"><a href="#Contacts">Contacts</a></li>
 				</ul>
 			</nav>
-			<input class="nav-input" type="search" name="search">
+			<!-- <input class="nav-input" type="search" name="search"> -->
 		</div>
 	</header>
 	<section class="main-page-section">
-		<ul class="main-page-p">
-			<li>Welcome To</li>
-			<li class="span">travel all around</li>
-		</ul>
+		<form class="land-page-form">
+			<div class="land-page-div">
+				<div class="find-adventure">
+					<label class="d-block">find an adventure</label>
+					<input class="d-block" type="search" name="search-direction" placeholder="Search Distination">
+				</div>
+				<div class="activity">
+					<label class="d-block">activity</label>
+					<select class="d-block">
+						<option>Thailand</option>
+						<option>China</option>
+						<option>Japan</option>
+						<option>India</option>
+						<option>Philippines</option>
+						<option>South Korea</option>
+					</select>
+
+				</div>
+				<div class="departs-between">
+					<label class="d-block">departs between</label>
+					<input type="date" name="date">
+					<!-- <p>Arrow</p> -->
+					<input type="date" name="date">
+				</div>
+				<div class="landing-page-buttom">
+					<button value="button">Search</button>
+				</div>
+			</div>
+		</form>
 	</section>
 	<section id="about-us" class="about-us">
 		<h1>About Us</h1>
@@ -41,7 +72,8 @@
 				<div class="div-box">
 					<img class="thailand-img" src="images/Thailand.jpg" alt="Thailand">
 					<h3 class="thailand-h3">Thailand</h3>
-					<p class="thailand-p">costs: From 2000$</p>
+					<p class="thailand-p">Costs: From 2000$</p>
+					<p class="thailand-p">Lasts: 5 Days</p>
 					<a href="list.html">
 						<button class="thailand-buttom buttom-main">See More</button>
 					</a>
@@ -50,30 +82,35 @@
 					<img class="thailand-img" src="images/Japan.jpg" alt="Japan">
 					<h3 class="thailand-h3">Japan</h3>
 					<p class="thailand-p">costs: From 1200$</p>
+					<p class="thailand-p">Lasts: 5 Days</p>
 					<button class="japan-buttom buttom-main">See More</button>
 				</div>
 				<div class="div-box">
 					<img class="thailand-img" src="images/China.jpg" alt="China">
 					<h3 class="thailand-h3">China</h3>
 					<p class="thailand-p">costs: From 1000$</p>
+					<p class="thailand-p">Lasts: 5 Days</p>
 					<button class="china-buttom buttom-main">See More</button>
 				</div>
 				<div class="div-box">
 					<img class="thailand-img" src="images/Seoul.jpg" alt="Seoul">
 					<h3 class="thailand-h3">South Korea</h3>
 					<p class="thailand-p">costs: From 1300$</p>
-					<button class="thailand-buttom buttom-main">See More</button>
+					<p class="thailand-p">Lasts: 5 Days</p>
+					<button class="South-Korea-Buttom buttom-main">See More</button>
 				</div>
 				<div class="div-box">
 					<img class="thailand-img" src="images/philipines.jpg" alt="Philipines">
-					<h3 class="thailand-h3">Philipines</h3>
+					<h3 class="thailand-h3">Philippines</h3>
 					<p class="thailand-p">costs: From 1700$</p>
-					<button class="thailand-buttom buttom-main">See More</button>
+					<p class="thailand-p">Lasts: 5 Days</p>
+					<button class="Philippines-buttom buttom-main">See More</button>
 				</div>
 				<div class="div-box">
 					<img class="thailand-img" src="images/India.jpg" alt="India">
 					<h3 class="thailand-h3">India</h3>
 					<p class="thailand-p">Costs: From 800$</p>
+					<p class="thailand-p">Lasts: 5 Days</p>
 					<button class="india-buttom buttom-main">See More</button>
 				</div>
 			</div>
