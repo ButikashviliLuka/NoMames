@@ -1,7 +1,56 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 body,html{
 	width: 100%;
 	height: 100%;
+	/*background: #7efff5;*/
 }
+html{
+	 font-family: 'Roboto';
+	 scroll-behavior: smooth;
+
+}
+.displain-inline-block{
+	display: inline-block;
+}
+/*start header*/
+.header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	background: #7ed6df;
+	z-index: 99;
+}
+.header-div{
+	display: flex;
+	justify-content: space-around;
+}
+.navigation{
+	width: 500px;
+/*	padding-left: 100px;*/
+	padding-top: 6px;
+}
+.nav-ul{
+	display: flex;
+	justify-content: space-around;
+}
+.nav-li:hover{
+	transform: scale(1.2);
+	font-weight: bolder;
+
+}
+.nav-input{
+	height: 30px;
+	width: 150px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+/*end header*/
 /*main page*/
 .main-page-section{
 	width: 100%;
@@ -18,10 +67,14 @@ body,html{
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	color: #0074D9;
 	font-size: 30px;
 	font-weight: bold;
+	-webkit-animation: flash 2s;
+	        animation: flash 2s;
 }
 
 
@@ -35,7 +88,7 @@ li{
 }
 
 
-@/*keyframes slide{
+/*@keyframes slide{
 	0%{
 		background-image: url(https://www.travelcontinuously.com/wp-content/uploads/2019/02/cancel-travel-plans-jords-journal-travel-continuously-1140x660.jpg);
 	}
@@ -46,72 +99,46 @@ li{
 		background-image: url(https://st2.depositphotos.com/1875497/10960/i/950/depositphotos_109607602-stock-photo-beautiful-coconut-palm-trees-on.jpg);
 	}
 }*/
-.index-section{
-	margin: 50px 30px;
-	border: 2px solid blue;
-
-}
-.index-p{
-	font-size: 20px;
-}
 /*end main page*/
 /*about us */
 
 .about-us{
 	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	/*background: #17c0eb;*/
 }
 .about-us h1{
 	font-size: 40px;
 	text-align: center;
+	-webkit-animation: flash 2s;
+	        animation: flash 2s;
 }
-
-
-
-
-
-
+.underliner{
+	width: 145px;
+	height: 4px;
+	background: black;
+	margin-left: 50%;
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
+	margin-top: 5px;
+}
+.about-us p{
+	margin-top: 40px;
+	font-size: 24px;
+	margin-left: 50px;
+}
 
 
 /*end about-us */
-.airplain{
-	width: 400px;
-	height: 400px;
-	float: right;
-	animation: airplain-animation 2s infinite;
-}
-
-
-@keyframes airplain-animation{
-	0%{
-		margin-right: 0;
-	}
-	20%{
-		margin-right: 20%;
-	}
-	40%{
-		margin-right: 40%;
-	}
-	60%{
-		margin-right: 60%;
-	}
-	80%{
-		margin-left: 80%;
-	}
-	100%{
-		margin-left: 100%;
-	}
-}
 
 
 
-/*............*/
-/*card effect*/
 
-/*.offers-h1{
-	text-align: center;
-	font-size: 25px;
-	margin-bottom: 30px;
-}*/
+
+/*section-box*/
+
 .offers-h1{
 	margin: 40 0px;
 	text-align: center;
@@ -119,16 +146,24 @@ li{
 }
 .section-box{
 	width: 100%;
-	background-color: #F8EFBA;
-	padding: 5em 5em;
+	/*background-color: #67e6dc;*/
+	padding: 80px 80px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .display-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .div-box{
 	margin-top: 50px;
@@ -142,7 +177,7 @@ li{
 	height: 250px;
 	border-radius: 10px;
 }
-.thailand-h1{
+.thailand-h3{
 	font-size: 20px;
 	text-align: center;
 	margin-top: 10px;
@@ -154,11 +189,19 @@ li{
 	text-align: center;
 }
 .thailand-buttom{
+	background-image: -webkit-gradient(linear, right top, left top, from(#C4E538), color-stop(#009432), to(#C4E538));
+	background-image: -o-linear-gradient(right, #C4E538, #009432, #C4E538);
 	background-image: linear-gradient(to left, #C4E538, #009432, #C4E538);
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
 	transition: 0.6s;
 }
 .japan-buttom{
+	background-image: -webkit-gradient(linear, right top, left top, from(#FDA7DF), color-stop(#9980FA), to(#FDA7DF));
+	background-image: -o-linear-gradient(right, #FDA7DF, #9980FA, #FDA7DF);
 	background-image: linear-gradient(to left, #FDA7DF, #9980FA, #FDA7DF);
+	-webkit-transition:0.6s;
+	-o-transition:0.6s;
 	transition:0.6s;
 }
 .buttom-main{
@@ -168,26 +211,83 @@ li{
 	height: 50px;
 	margin-top: 20px;
 	margin-left: 50%;
-	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
 	cursor: pointer;
 	background-size: 200%;
 }
 .china-buttom{
+	background-image: -webkit-gradient(linear, right top, left top, from(#FFC312), color-stop(#EE5A24), to(#FFC312));
+	background-image: -o-linear-gradient(right, #FFC312, #EE5A24, #FFC312);
 	background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312);
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+}
+.india-buttom{
+	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
+	background-image: -o-linear-gradient(right, #12CBC4, #0652DD, #12CBC4);
+	background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
 	transition: 0.6s;
 }
 .thailand-buttom:hover,
 .japan-buttom:hover,
-.china-buttom:hover{
+.china-buttom:hover,
+.india-buttom:hover{
 	background-position: right;
 }
+/*end section-box*/
+/*Start question-section*/
 
+.questions-section{
+	padding-top: 80px;
+	width: 100%;
+	background: #aaa69d;
+}
+.questions-section h2{
+	text-align: center;
+	font-size: 30px;
+
+}
+.questions-section .underliner{
+	margin-bottom: 50px;
+}
+.question-div2{
+	width: 600px;
+	height: 150px;
+	background: #ecf0f1;
+	margin-bottom: 35px;
+	padding: 30px 30px;
+	border-radius: 8px;
+}
+.question-div2 h4{
+	font-size: 23px;
+	color: #7f8c8d;
+	font-weight: bolder;
+
+}
+.question-div2 p{
+	margin-top: 20px;
+	font-size: 15px;
+	color: #95a5a6;
+}
+
+
+
+/*End Question-Section*/
 /*Footer*/
 .main-footer1-div{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin-top: 50px;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-top: 80px;
 }
 .footer1{
 	width: 100%;
@@ -210,10 +310,28 @@ li{
 	padding: 20px 40px;
 	outline: none;
 	color: #ddd;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+	/* Firefox */
+	input[type=number] {
+	  -moz-appearance:textfield;
+	}
+textarea{
+	height: 150px;
+	resize: none;
+}
 .form-input:hover{
-	box-shadow: 0 0 10px 4px #34495e;
+	-webkit-box-shadow: 0 0 10px 4px #34495e;
+	        box-shadow: 0 0 10px 4px #34495e;
 }
 .button-send{
 	width: 100px;
@@ -222,7 +340,8 @@ li{
 	border-radius: 7px;
 	background: #353b48;
 	margin-left: 65%;
-	box-shadow: 0 4px 8px 0 black;
+	-webkit-box-shadow: 0 4px 8px 0 black;
+	        box-shadow: 0 4px 8px 0 black;
 }
 .devider{
 	height: 350px;
@@ -238,156 +357,205 @@ iframe{
 
 /*end card effect*/
 
-.displain-inline-block{
-	display: inline-block;
-}
 
 
 
 
 
-
-/*about us*/
-.about-us{
+/*start page2*/
+.thailand-trip1{
+	background-image: url("../images2/First-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 	width: 100%;
-	padding-top: 40px;
-	padding-bottom: 50px;
-	background: #17c0eb;
-}
-.about-us h1{
-	font-size: 40px;
-	text-align: center;
-}
-.underliner{
-	width: 145px;
-	height: 4px;
-	background: black;
-	margin-left: 50%;
-	transform: translate(-50%);
-	margin-top: 5px;
-}
-.about-us p{
-	margin-top: 40px;
-	font-size: 24px;
-	margin-left: 50px;
-}
-
-
-
-/*end about us */
-
-/*question section*/
-.questions-section{
-	padding-top: 50px;
-	width: 100%;
-	background: #aaa69d;
-}
-.questions-section h2{
-	text-align: center;
-	font-size: 30px;
-
-}
-.questions-section .underliner{
-	margin-bottom: 50px;
-}
-.question-div2{
-	width: 600px;
-	height: 150px;
-	background: #ecf0f1;
-	margin-bottom: 35px;
-	padding: 30px 30px;
-	border-radius: 8px;
-}
-.question-div2 h1{
-	font-size: 23px;
-	color: #7f8c8d;
-	font-weight: bolder;
-
-}
-.question-div2 p{
-	margin-top: 20px;
-	font-size: 15px;
-	color: #95a5a6;
-}
-/*end question section*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.contact-footer{
-	background-color: #3d5c5c;
-	width: 100%;
-	height: 500px;
-}
-.contact-h1{
-	padding: 30px;
+	height: 100%;
+	overflow: hidden;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	font-size: 50px;
+	align-items: center;
 }
-.contact-h3{
-	margin-bottom:30px;
+.thailand-trip2{
+	background-image: url("../images2/Second-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	font-size: 20px;
+	align-items: center;
 }
-.contact-main-div{
+.thailand-trip3{
+	background-image: url("../images2/Third-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.contact-div-1{
-	margin-left: 80px;
+.thailand-trip4{
+	background-image: url("../images2/Fourth-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-label{
-	display: block;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	font-size: 22px;
+.thailand-trip5{
+	background-image: url("../images2/First-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-input{
-	width: 400px;
-	height: 30px;
-	padding: 10px 15px;
-	background-color: #3d5c5c;
+.thailand-trip1 h1,
+.thailand-trip2 h1,
+.thailand-trip3 h1,
+.thailand-trip4 h1,
+.thailand-trip5 h1{
+		font-size: 60px;
+		margin-bottom: 150px;
+		background: white;
+		border: 2px ridge black;
+
 }
-input:focus{
-	border-bottom: 2px solid #e6e600;
+.thailand-trip1 h2,
+.thailand-trip2 h2,
+.thailand-trip3 h2,
+.thailand-trip4 h2,
+.thailand-trip5 h2{
+		font-size: 30px;
+		margin-bottom: 18px;
+		background: white;
+
 }
-.contact-div-2{
-	height: 320px;
-	width: 5px;
-	background: black;
+.thailand-trip1 h3,
+.thailand-trip2 h3,
+.thailand-trip3 h3,
+.thailand-trip4 h3,
+.thailand-trip5 h3{
+		font-size: 30px;
+		margin-bottom: 18px;
+		background: white;
+
 }
-.or{
-	width: 60px;
-	height: 50px;
-	border-radius: 20px;
-	border: 1px solid white;
-	margin-top: 145px;
-	margin-left: -26px;
+.thailand-trip1 h4,
+.thailand-trip2 h4,
+.thailand-trip3 h4,
+.thailand-trip4 h4,
+.thailand-trip5 h4{
+		font-size: 30px;
+		margin: 0 40px;
+		background: white;
+
 }
-iframe{
-	margin-right: 30px;
-}*/
+
+
+
+
+
+
+
+
+
+/*End page2*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aniamtions*/
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+
 
 
 
