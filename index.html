@@ -6,19 +6,21 @@
 	<meta name="decription" content="TravelToAsia">
 
 	<meta name="google" content="notranslate">
-	<title>Main page</title>
+	<title>Travel To Asia</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/font.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="header-div">
 			<nav class="navigation">
-				<!-- <h1>TravelToAsia</h1> -->
 				<ul class="nav-ul">
+					<!-- <li>
+						<img class="logo displain-inline-block" src="images/logo.png">
+						<h1 class="displain-inline-block">TravelToAsia</h1>
+					</li> -->
 					<li class="nav-li"><a href="#about-us">About Us</a></li>
 					<li class="nav-li"><a href="#Quick-offers">Our Offers</a></li>
 					<li class="nav-li"><a href="#Quick-questions">Quick Questions</a></li>
@@ -36,21 +38,19 @@
 					<input class="d-block" type="search" name="search-direction" placeholder="Search Distination">
 				</div>
 				<div class="activity">
-					<label class="d-block">activity</label>
+					<label class="d-block">Activity</label>
 					<select class="d-block">
-						<option>Thailand</option>
-						<option>China</option>
-						<option>Japan</option>
-						<option>India</option>
-						<option>Philippines</option>
-						<option>South Korea</option>
+						<option>Multy-Country Holidays</option>
+						<option>Winter Holidays</option>
+						<option>Couple Journey</option>
+						<option>Family</option>
+						<option>All Activities</option>
 					</select>
-
 				</div>
 				<div class="departs-between">
 					<label class="d-block">departs between</label>
 					<input type="date" name="date">
-					<!-- <p>Arrow</p> -->
+					<span style='font-size:30px;'>&#8594;</span>
 					<input type="date" name="date">
 				</div>
 				<div class="landing-page-buttom">
@@ -60,14 +60,12 @@
 		</form>
 	</section>
 	<section id="about-us" class="about-us">
-		<h1>About Us</h1>
-		<div class="underliner"></div>
-		<p>we are travel agency from Georgia and help people to see amazing things in Asia for cheap ways. Distinations are selected by the interwiev result around the world people what they like in concret countries.</p>
+		<h1 class="about-us-h1">About Us</h1>
+		<p>We are travel agency from Georgia. We love adventure travel and always have. There’s something about the feeling of visiting a new country, culture or environment – whether that’s a mountain range, desert or jungle – that just can’t be beaten. So, if you’re looking for an adventure holiday, or are in need of some travel inspiration for your next activity holiday, you’ve come to the right place.</p>
 	</section>
 	
 	<section id="Quick-offers" class="section-box">
-		<h1 class="offers-h1">Here are some offers</h1>
-		<!-- <div class="underliner"></div> -->
+		<h1 class="offers-h1">The Best Offers</h1>
 			<div class="display-flex">
 				<div class="div-box">
 					<img class="thailand-img" src="images/Thailand.jpg" alt="Thailand">
@@ -117,7 +115,6 @@
 	</section>
 	<section id="Quick-questions" class="questions-section">
 		<h2>Frequently Ask Questions</h2>
-		<div class="underliner"></div>
 		<div class="display-flex">
 			<div class="question-div2">
 				<h4>Are there any sales?</h4>
@@ -136,28 +133,38 @@
 				<p>We have different countries contacts where u can stay it like 4-5 stars hotels.</p>
 			</div>
 		</div>
+		<button class="learn-more-button" value="button">Learn More</button>
+	</section>
+	<section class="users-opinions">
+		<h2>Your words, not ours</h2>
+		<div class="opinions-div">
+			<div>
+				<p>A completly enjoyable excursion, which worked out as expacted. We went out the way...</p>
+				<h5><a href="#">N. Gamkrelidze, 2019</a></h5>
+				<h6>Explored Thailand</h6>
+			</div>
+			<div>
+				<p>Booked this as wanted to see South Korea. Far exceed my expectations...</p>
+				<h5><a href="#">A. Javakhishvili, 2019</a></h5>
+				<h6>Explored South Korea</h6>
+			</div>
+			<div>
+				<p>Booked this as wanted to see South Korea. Far exceed my expectations...</p>
+				<h5><a href="#">A. Javakhishvili, 2019</a></h5>
+				<h6>Explored China</h6>
+			</div>
+		</div>
+
 	</section>
 
 
 
 
 
-	<footer id="Contacts" class="footer1">
-		<h1 class="footer1-h1">Contact Us</h1>
-		<div class="underliner"></div>
-		<div class="main-footer1-div">
-			<div>
-				<form class="footer1-form">
-					<input class="form-input" type="text" name="FullName" placeholder=" Full Name">
-					<input class="form-input" type="Email" name="Email" placeholder="Email">
-					<textarea class="form-input" placeholder="Ask Anything you want to know about us and we will repeat it back in your email."></textarea>
-					<button class="button-send">Send</button>
-				</form>
-				
-			</div>
-			<div class="devider"></div>
-			<div>
-				<div class="icon-div">
+	<footer class="footer">
+		<div class="footer-contact-div">
+			<h2>Contact Us:</h2>
+			<div class="icon-div">
 					<i class="fas fa-phone-alt displain-inline-block"></i>
 					<a href="tel:+995 32 222 222"> +995 32 222 222</a>
 				</div>
@@ -165,21 +172,48 @@
 					<i class="fas fa-envelope displain-inline-block"></i>
 					<a href="mailto:name@rapidtables.com?subject=send your mail">luka.butikashvili14b@geolab.edu.ge </a>
 				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.136282435555!2d44.782830215436135!3d41.71757797923523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d4fa5b02d7%3A0xced15c2c7992ceb5!2sGeoLab!5e0!3m2!1sen!2sge!4v1576826469775!5m2!1sen!2sge" width="450" height="280" style="border:0;" allowfullscreen=""></iframe>
-
-
+				<div class="icon-div">
+					<i class="fas fa-search-location"></i>
+					<a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2978.1362814733243!2d44.7828302!3d41.717578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d4fa5b02d7%3A0xced15c2c7992ceb5!2sGeoLab!5e0!3m2!1sen!2sge!4v1577134890048!5m2!1sen!2sge" target="_blank"> 10 Merab Aleksidze St, Tbilisi 0193</a>
+				</div>
+				<p class="social-p">follow us:</p>
+			<div class="social-div">
+				<ul class="social-ul">
+					<li class="social-li display-inline-block"><i class="fab fa-facebook-f block-icon icons"></i></li>
+					<li class="social-li display-inline-block block-icon icons"><i class="fab fa-instagram"></i></li>
+					<li class="social-li display-inline-block block-icon"><i class="fab fa-twitter icons"></i></li>
+				</ul>
 			</div>
 		</div>
+			<ul class="footer-ul">
+				<li><span class="color-li">Trip by Interest</span></li>
+				<li>All-Inclusive specials</li>
+				<li>Destination wedding specials</li>
+				<li>Family vacation specials</li>
+				<li>Honeymoon specials</li>
+				<li>Couple & Romance specials</li>
+				<li>Golf travel specials</li>
+				<li><a href="#">See More ></a></li>
+			</ul>
+			<ul class="footer-ul">
+				<li><span class="color-li">Curated Travel Specials</span></li>
+				<li>Cruises</li>
+				<li>Hotels & Resorts</li>
+				<li>Vacation Packages</li>
+				<li>Car Packages</li>
+				<li>Travel Inspiration</li>
+				<li><a href="">View All Specials ></a></li>
+			</ul>
+			<ul class="footer-ul">
+				<li><span class="color-li">About the Company</span></li>
+				<li>About Us</li>
+				<li>Why Choose Us</li>
+				<li>News Releases</li>
+				<li>Terms & Privacy Policy</li>
+			</ul>
 	</footer>
 
 
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<script src="js/aos.js"></script>
-	<script type="text/javascript">
-	  AOS.init();
-	</script>
 </body>
 </html>

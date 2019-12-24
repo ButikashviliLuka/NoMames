@@ -1,16 +1,15 @@
 
-
 body,html{
 	width: 100%;
 	height: 100%;
-	/*background: #7efff5;*/
+	background: #f1f2f6;
 }
 html{
-	 font-family: 'Roboto';
+	 font-family: 'Arial';
 	 scroll-behavior: smooth;
 
 }
-.displain-inline-block{
+.display-inline-block{
 	display: inline-block;
 }
 .d-block{
@@ -26,20 +25,27 @@ html{
 	padding-top: 17px;
 }
 .header-div{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .navigation{
 	width: 500px;
-/*	padding-left: 100px;*/
 	padding-top: 6px;
 }
 .nav-ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .nav-li:hover{
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 	font-weight: bolder;
 
 }
@@ -54,17 +60,17 @@ html{
 
 
 
-/*end header*/
-/*main page*/
+/*End Header*/
+
+/*Landing page*/
 .main-page-section{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	overflow: hidden;
 	background-image: url(https://www.nexusholidays.ca/Upload/images/line_pic/201902/1551131719.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	/*animation: slide 20s infinite;*/
 	position: relative;
 	z-index: 20;
 }
@@ -81,25 +87,29 @@ html{
 	-webkit-animation: flash 2s;
 	        animation: flash 2s;
 }
-
-
-
-
 .land-page-form{
 	z-index: 40;
 	background: white;
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
-	transform: translate(-50%);
-	width: 1200px;
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
+	max-width: 1200px;
+	width: 100%;
 	height: 130px;
 	border:1px solid white;
-	box-shadow: 0 2px 4px #403131;
+	-webkit-box-shadow: 0 2px 4px #403131;
+	        box-shadow: 0 2px 4px #403131;
 }
 .land-page-div{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .find-adventure{
 	padding-top: 20px;
@@ -112,13 +122,11 @@ html{
 	margin-top: 10px;
 	width: 170px;
 	height: 35px;
-	/*background: gray;*/
 	padding: 0 10px;
 	cursor: pointer;
 	font-size: 15px;
 }
 .activity{
-	
 	padding-top: 20px;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -127,7 +135,6 @@ html{
 	margin-top: 10px;
 	width: 170px;
 	height: 35px;
-	/*background: gray;*/
 	font-size: 15px;
 }
 .departs-between{
@@ -141,7 +148,6 @@ html{
 	margin-top: 10px;
 	width: 130px;
 	height: 35px;
-	/*background: gray;*/
 	font-size: 15px;
 }
 
@@ -158,18 +164,6 @@ html{
 	border-radius: 10px;
 }
 
-
-/*@keyframes slide{
-	0%{
-		background-image: url(https://www.travelcontinuously.com/wp-content/uploads/2019/02/cancel-travel-plans-jords-journal-travel-continuously-1140x660.jpg);
-	}
-	33%{
-		background-image: url(https://www.go4travelblog.com/app/uploads/2019/05/asia-travel.jpg);
-	}
-	67%{
-		background-image: url(https://st2.depositphotos.com/1875497/10960/i/950/depositphotos_109607602-stock-photo-beautiful-coconut-palm-trees-on.jpg);
-	}
-}*/
 /*end main page*/
 /*about us */
 
@@ -177,26 +171,32 @@ html{
 	width: 100%;
 	padding-top: 80px;
 	padding-bottom: 50px;
-	/*background: #17c0eb;*/
 }
 .about-us h1{
-	font-size: 40px;
+	font-size: 25px;
 	text-align: center;
-	-webkit-animation: flash 2s;
-	        animation: flash 2s;
 }
-.underliner{
-	width: 145px;
-	height: 4px;
-	background: black;
+./*about-us h1:after{
+	content: '';
+	display: none;
+	width: 100px;
+	height: 3px;
+	background-color: black;
 	margin-left: 50%;
-	-webkit-transform: translate(-50%);
-	    -ms-transform: translate(-50%);
-	        transform: translate(-50%);
+	transform: translate(-50%);
 	margin-top: 5px;
+	transform: 0.5s;
 }
+.about-us h1:hover:after{
+	display: block;
+	transform-origin: left;
+}*/
 .about-us p{
-	margin-top: 40px;
+	text-align: center;
+}
+
+.about-us p{
+	margin-top: 50px;
 	font-size: 24px;
 	margin-left: 50px;
 }
@@ -217,7 +217,7 @@ html{
 }
 .section-box{
 	width: 100%;
-	/*background-color: #67e6dc;*/
+	background-color: #dfe4ea;
 	padding: 80px 80px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -238,6 +238,7 @@ html{
 }
 .div-box{
 	margin-top: 50px;
+	margin-left: 10px;
 	width: 350px;
 	height: 450px;
 	background-color: #95a5a6;
@@ -260,16 +261,16 @@ html{
 	text-align: center;
 }
 .thailand-buttom{
-	background-image: -webkit-gradient(linear, right top, left top, from(#C4E538), color-stop(#009432), to(#C4E538));
 	background-image: -o-linear-gradient(right, #C4E538, #009432, #C4E538);
+	background-image: -webkit-gradient(linear, right top, left top, from(#C4E538), color-stop(#009432), to(#C4E538));
 	background-image: linear-gradient(to left, #C4E538, #009432, #C4E538);
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
 	transition: 0.6s;
 }
 .japan-buttom{
-	background-image: -webkit-gradient(linear, right top, left top, from(#FDA7DF), color-stop(#9980FA), to(#FDA7DF));
 	background-image: -o-linear-gradient(right, #FDA7DF, #9980FA, #FDA7DF);
+	background-image: -webkit-gradient(linear, right top, left top, from(#FDA7DF), color-stop(#9980FA), to(#FDA7DF));
 	background-image: linear-gradient(to left, #FDA7DF, #9980FA, #FDA7DF);
 	-webkit-transition:0.6s;
 	-o-transition:0.6s;
@@ -289,32 +290,31 @@ html{
 	background-size: 200%;
 }
 .china-buttom{
-	background-image: -webkit-gradient(linear, right top, left top, from(#FFC312), color-stop(#EE5A24), to(#FFC312));
 	background-image: -o-linear-gradient(right, #FFC312, #EE5A24, #FFC312);
+	background-image: -webkit-gradient(linear, right top, left top, from(#FFC312), color-stop(#EE5A24), to(#FFC312));
 	background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312);
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
 	transition: 0.6s;
 }
 .South-Korea-Buttom{
-	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
-	background-image: -o-linear-gradient(right, #12CBC4, #0652DD, #12CBC4);
-	background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+	background-image: -webkit-gradient(linear, right top, left top, from(#fbc2eb), color-stop(50%, #a6c1ee), to(#fbc2eb));
+	background-image: -o-linear-gradient(right, #fbc2eb 0%, #a6c1ee 50%, #fbc2eb 100%);
+	background-image: linear-gradient(to left, #fbc2eb 0%, #a6c1ee 50%, #fbc2eb 100%);
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
 	transition: 0.6s;
 }
 .Philippines-buttom{
-	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
-	background-image: -o-linear-gradient(right, #12CBC4, #0652DD, #12CBC4);
-	background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+	background-image: -o-linear-gradient(330deg, #84fab0 0%, #8fd3f4 50%, #84fab0 100%);
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 50%, #84fab0 100%);
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
 	transition: 0.6s;
 }
 .india-buttom{
-	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
 	background-image: -o-linear-gradient(right, #12CBC4, #0652DD, #12CBC4);
+	background-image: -webkit-gradient(linear, right top, left top, from(#12CBC4), color-stop(#0652DD), to(#12CBC4));
 	background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
@@ -332,21 +332,20 @@ html{
 /*Start question-section*/
 
 .questions-section{
-	padding-top: 80px;
+	padding: 80px 0 30px 0;
 	width: 100%;
-	background: #aaa69d;
+	background: #d1d8e0;
 }
 .questions-section h2{
 	text-align: center;
-	font-size: 30px;
+	font-size: 25px;
+	margin-bottom: 70px;
 
 }
-.questions-section .underliner{
-	margin-bottom: 50px;
-}
 .question-div2{
-	width: 600px;
-	height: 150px;
+	max-width: 600px;
+	width: 100%;
+	margin: 0 10px;
 	background: #ecf0f1;
 	margin-bottom: 35px;
 	padding: 30px 30px;
@@ -367,8 +366,20 @@ html{
 
 
 /*End Question-Section*/
-/*Footer*/
-.main-footer1-div{
+/*opinions section*/
+.users-opinions{
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	background: #ced6e0;
+	text-align: center;
+}
+.users-opinions h2{
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.opinions-div{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -376,75 +387,170 @@ html{
 	    justify-content: space-around;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	margin-top: 80px;
 }
-.footer1{
+.opinions-div div{
+	margin-top: 30px;
+	margin: 0 15px;
+	margin-bottom: 30px;
+	padding: 0 30px;
+	max-width: 300px;
 	width: 100%;
-	padding-bottom: 50px;
+	height: 200px;
+	background: white;
+	border-radius: 6px;
+	-webkit-box-shadow: 10px 10px 10px 10px #403131;
+	        box-shadow: 10px 10px 10px 10px #403131;
 }
-.footer1-h1{
-	text-align: center;
-	font-size: 40px;
-	padding-top: 50px;
+.opinions-div div p{
+	margin-top: 50px;
+	font-size: 17px;
 }
-.footer1-form{
-	padding-top: 10px;
+.opinions-div div h5{
+	margin-top: 20px;
+	font-size: 13px;
+	color: blue;
 }
-.form-input{
-	display: block;
-	width: 400px;
-	margin: 16px 50px;
-	border:0;
-	background: #111;
-	padding: 20px 40px;
-	outline: none;
-	color: #ddd;
+.opinions-div div h6{
+	margin-top: 10px;
+	font-size: 12px;
+	color:gray;
+}
+.learn-more-button{
+	width: 150px;
+	line-height: 50px;
+	border:2px solid #7ed6df;
+	font-size: 17px;
+	-webkit-transition: 5s;
+	-o-transition: 5s;
+	transition: 5s;
+	margin-left: 50%;
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
+	cursor: pointer;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
-}
-	/* Chrome, Safari, Edge, Opera */
-	input::-webkit-outer-spin-button,
-	input::-webkit-inner-spin-button {
-	  -webkit-appearance: none;
-	  margin: 0;
-	}
+	border-radius: 4px;
 
-	/* Firefox */
-	input[type=number] {
-	  -moz-appearance:textfield;
-	}
-textarea{
-	height: 150px;
-	resize: none;
 }
-.form-input:hover{
-	-webkit-box-shadow: 0 0 10px 4px #34495e;
-	        box-shadow: 0 0 10px 4px #34495e;
+.learn-more-button:hover{
+	background: #7ed6df;
+	color: white;
 }
-.button-send{
-	width: 100px;
-	height: 50px;
-	border: 0;
-	border-radius: 7px;
-	background: #353b48;
-	margin-left: 65%;
-	-webkit-box-shadow: 0 4px 8px 0 black;
-	        box-shadow: 0 4px 8px 0 black;
+
+/*end opinions section*/
+/*Footer*/
+.footer{
+	padding: 80px 10px 40px 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	background: white;
+	background-color: #a5b1c2;
 }
-.devider{
-	height: 350px;
-	width: 5px;
-	background: black;
+.footer-contact-div{
+
+}
+.footer div h2{
+	font-weight: bold;
+}
+.social-p{
+	margin-top: 10px;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+.social-div{
+	margin: 10px auto;
+}
+.social-ul{
+	margin-top: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+
+}
+.social-li{
+	margin-left: 6px;
+	width: 20px;
+	height: 30px;
+}
+.icons{
+	font-size: 30px;
+	margin-left: 10px;
 }
 .icon-div{
-	margin-top: 10px;
+	margin-top: 11px;
+	display: block;
 }
-iframe{
-	margin-top: 20px;
+.footer-div{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.footer-ul{
+	margin-left: 80px;
+}
+.footer-ul li{
+	line-height: 26px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.color-li{
+	font-weight: bolder;
 }
 
-/*end card effect*/
+/*End Footer*/
+
+/*Respomsive*/
+
+@media only screen and (max-width: 1055px) {
+  .activity {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+	.footer{
+		flex-wrap: wrap;
+	}
+	.footer-ul:last-child{
+		margin-top: 30px;
+		margin-left: 60px;
+	}
+}
+@media only screen and (max-width: 860px) {
+  .land-page-form {
+    display: none;
+  }
+  .footer-ul:last-child{
+		margin-left: 0px;
+	}
+    .footer-ul:nth-child(1){
+		margin-left: 50px;
+	}
+	.footer-contact-div{
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -460,10 +566,19 @@ iframe{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .thailand-trip2{
 	background-image: url("../images2/Second-img.png");
@@ -473,10 +588,19 @@ iframe{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .thailand-trip3{
 	background-image: url("../images2/Third-img.png");
@@ -487,10 +611,19 @@ iframe{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .thailand-trip4{
 	background-image: url("../images2/Fourth-img.png");
@@ -500,10 +633,19 @@ iframe{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .thailand-trip5{
 	background-image: url("../images2/First-img.png");
@@ -513,10 +655,19 @@ iframe{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .thailand-trip1 h1,
 .thailand-trip2 h1,
@@ -561,54 +712,7 @@ iframe{
 }
 
 
-
-
-
-
-
-
-
 /*End page2*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*aniamtions*/
@@ -643,12 +747,3 @@ iframe{
   -webkit-animation-name: flash;
   animation-name: flash;
 }
-
-
-
-
-
-
-
-
-
