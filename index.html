@@ -4,32 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="decription" content="TravelToAsia">
-
 	<meta name="google" content="notranslate">
 	<title>Travel To Asia</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="header">
-		<div class="header-div">
-			<nav class="navigation">
-				<ul class="nav-ul">
-					<!-- <li>
-						<img class="logo displain-inline-block" src="images/logo.png">
-						<h1 class="displain-inline-block">TravelToAsia</h1>
-					</li> -->
-					<li class="nav-li"><a href="#about-us">About Us</a></li>
-					<li class="nav-li"><a href="#Quick-offers">Our Offers</a></li>
-					<li class="nav-li"><a href="#Quick-questions">Quick Questions</a></li>
-					<li class="nav-li"><a href="#Contacts">Contacts</a></li>
+	<div class="wrapper">
+		<header>
+		<nav>
+			<div class="menu-icon">
+				<i class="fa fa-bars fa-2x"></i>
+			</div>
+			<div class="logo">
+				Travel To Asia
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#about-us">About Us</a></li>
+					<li><a href="#offers">Best Offers</a></li>
+					<li><a href="#Quick-Questions">Questions</a></li>
 				</ul>
-			</nav>
-			<!-- <input class="nav-input" type="search" name="search"> -->
-		</div>
-	</header>
+				
+			</div>
+		</nav>	
+		</header>
+	</div>
 	<section class="main-page-section">
 		<form class="land-page-form">
 			<div class="land-page-div">
@@ -64,7 +68,7 @@
 		<p>We are travel agency from Georgia. We love adventure travel and always have. There’s something about the feeling of visiting a new country, culture or environment – whether that’s a mountain range, desert or jungle – that just can’t be beaten. So, if you’re looking for an adventure holiday, or are in need of some travel inspiration for your next activity holiday, you’ve come to the right place.</p>
 	</section>
 	
-	<section id="Quick-offers" class="section-box">
+	<section id="offers" class="section-box">
 		<h1 class="offers-h1">The Best Offers</h1>
 			<div class="display-flex">
 				<div class="div-box">
@@ -113,7 +117,7 @@
 				</div>
 			</div>
 	</section>
-	<section id="Quick-questions" class="questions-section">
+	<section id="Quick-Questions" class="questions-section">
 		<h2>Frequently Ask Questions</h2>
 		<div class="display-flex">
 			<div class="question-div2">
@@ -213,6 +217,13 @@
 			</ul>
 	</footer>
 
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		});
+	</script>
 
 
 </body>

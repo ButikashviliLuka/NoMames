@@ -1,4 +1,5 @@
 
+
 body,html{
 	width: 100%;
 	height: 100%;
@@ -15,54 +16,61 @@ html{
 .d-block{
 	display: block;
 }
-/*start header*/
-.header{
-	width: 100%;
-	height: 60px;
+/*Start Header*/
+
+.logo{
 	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+}
+nav{
+	position: fixed;
+	width: 100%;
+	z-index: 99999999999;
 	background: #7ed6df;
-	z-index: 99;
-	padding-top: 17px;
 }
-.header-div{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+nav ul{
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 }
-.navigation{
-	width: 500px;
-	padding-top: 6px;
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+	transition: 1s;
 }
-.nav-ul{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-}
-.nav-li:hover{
+nav ul li:hover{
 	-webkit-transform: scale(1.2);
 	    -ms-transform: scale(1.2);
 	        transform: scale(1.2);
-	font-weight: bolder;
-
 }
-.nav-input{
-	height: 30px;
-	width: 150px;
-	margin-top: 10px;
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
 }
-
-
-
-
-
-
+.menu-icon{
+	width: 100%;
+	background: #7ed6df;
+	text-align: right;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
 /*End Header*/
 
-/*Landing page*/
+/*Landing Page*/
 .main-page-section{
 	width: 100%;
 	height: 100vh;
@@ -73,7 +81,7 @@ html{
 	background-attachment: fixed;
 	position: relative;
 	z-index: 20;
-}
+}s
 .main-page-p{
 	position: absolute;
 	left: 50%;
@@ -114,7 +122,6 @@ html{
 .find-adventure{
 	padding-top: 20px;
 	padding-left:20px;
-	
 	font-size: 20px;
 	text-transform: uppercase;
 }
@@ -138,7 +145,6 @@ html{
 	font-size: 15px;
 }
 .departs-between{
-	
 	padding-top: 20px;
 	padding-right: 20px;
 	font-size: 20px;
@@ -150,9 +156,6 @@ html{
 	height: 35px;
 	font-size: 15px;
 }
-
-
-
 .landing-page-buttom{
 	margin-top: 26px;
 	margin-right: 100px;
@@ -164,9 +167,8 @@ html{
 	border-radius: 10px;
 }
 
-/*end main page*/
-/*about us */
-
+/*End Landing Page*/
+/*About Us */
 .about-us{
 	width: 100%;
 	padding-top: 80px;
@@ -175,8 +177,9 @@ html{
 .about-us h1{
 	font-size: 25px;
 	text-align: center;
+	font-family: 'Lobster', cursive;
 }
-./*about-us h1:after{
+/*about-us h1:after{
 	content: '';
 	display: none;
 	width: 100px;
@@ -192,28 +195,22 @@ html{
 	transform-origin: left;
 }*/
 .about-us p{
-	text-align: center;
-}
-
-.about-us p{
 	margin-top: 50px;
 	font-size: 24px;
 	margin-left: 50px;
+	text-align: center;
+	font-family: 'Lobster', cursive;
 }
 
+/*End About Us */
 
-/*end about-us */
-
-
-
-
-
-/*section-box*/
+/*Section Box*/
 
 .offers-h1{
 	margin: 40 0px;
 	text-align: center;
 	font-size: 25px;
+	font-family: 'Lobster', cursive;
 }
 .section-box{
 	width: 100%;
@@ -298,8 +295,8 @@ html{
 	transition: 0.6s;
 }
 .South-Korea-Buttom{
-	background-image: -webkit-gradient(linear, right top, left top, from(#fbc2eb), color-stop(50%, #a6c1ee), to(#fbc2eb));
 	background-image: -o-linear-gradient(right, #fbc2eb 0%, #a6c1ee 50%, #fbc2eb 100%);
+	background-image: -webkit-gradient(linear, right top, left top, from(#fbc2eb), color-stop(50%, #a6c1ee), to(#fbc2eb));
 	background-image: linear-gradient(to left, #fbc2eb 0%, #a6c1ee 50%, #fbc2eb 100%);
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
@@ -328,8 +325,8 @@ html{
 .india-buttom:hover{
 	background-position: right;
 }
-/*end section-box*/
-/*Start question-section*/
+/*End Section Box*/
+/*Start Question Section*/
 
 .questions-section{
 	padding: 80px 0 30px 0;
@@ -340,6 +337,7 @@ html{
 	text-align: center;
 	font-size: 25px;
 	margin-bottom: 70px;
+	font-family: 'Lobster', cursive;
 
 }
 .question-div2{
@@ -362,11 +360,34 @@ html{
 	font-size: 15px;
 	color: #95a5a6;
 }
+.learn-more-button{
+	width: 150px;
+	line-height: 50px;
+	border:2px solid #7ed6df;
+	font-size: 17px;
+	-webkit-transition: 5s;
+	-o-transition: 5s;
+	transition: 5s;
+	margin-left: 50%;
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
+	cursor: pointer;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	border-radius: 4px;
+	font-family: 'Lobster', cursive;
+
+}
+.learn-more-button:hover{
+	background: #7ed6df;
+	color: white;
+}
 
 
-
-/*End Question-Section*/
-/*opinions section*/
+/*End Question Section*/
+/*Opinions Section*/
 .users-opinions{
 	width: 100%;
 	padding-top: 80px;
@@ -378,6 +399,7 @@ html{
 	font-size: 25px;
 	text-transform: uppercase;
 	margin-bottom: 50px;
+	font-family: 'Lobster', cursive;
 }
 .opinions-div{
 	display: -webkit-box;
@@ -404,6 +426,8 @@ html{
 .opinions-div div p{
 	margin-top: 50px;
 	font-size: 17px;
+	font-family: 'Lobster', cursive;
+	line-height: 22px;
 }
 .opinions-div div h5{
 	margin-top: 20px;
@@ -415,31 +439,9 @@ html{
 	font-size: 12px;
 	color:gray;
 }
-.learn-more-button{
-	width: 150px;
-	line-height: 50px;
-	border:2px solid #7ed6df;
-	font-size: 17px;
-	-webkit-transition: 5s;
-	-o-transition: 5s;
-	transition: 5s;
-	margin-left: 50%;
-	-webkit-transform: translate(-50%);
-	    -ms-transform: translate(-50%);
-	        transform: translate(-50%);
-	cursor: pointer;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-	border-radius: 4px;
 
-}
-.learn-more-button:hover{
-	background: #7ed6df;
-	color: white;
-}
 
-/*end opinions section*/
+/*End Opinions Section*/
 /*Footer*/
 .footer{
 	padding: 80px 10px 40px 10px;
@@ -498,7 +500,7 @@ html{
 	    flex-wrap: wrap;
 }
 .footer-ul{
-	margin-left: 80px;
+	margin-left: 15px;
 }
 .footer-ul li{
 	line-height: 26px;
@@ -519,12 +521,35 @@ html{
   }
 }
 @media only screen and (max-width: 900px) {
+	.logo{
+		position: fixed;
+		top: 0;
+		margin-top: 16px
+	}
+	nav ul{
+		max-height: 0px;
+		background: #7ed6df;
+	}
+	.showing{
+		max-height: 20em;
+	}
+	nav ul li{
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+	.menu-icon{
+		display: block;
+		background: #7ed6df;
+	}
 	.footer{
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 	.footer-ul:last-child{
 		margin-top: 30px;
 		margin-left: 60px;
+		
 	}
 }
 @media only screen and (max-width: 860px) {
@@ -532,31 +557,16 @@ html{
     display: none;
   }
   .footer-ul:last-child{
-		margin-left: 0px;
+		
 	}
     .footer-ul:nth-child(1){
-		margin-left: 50px;
+		
 	}
 	.footer-contact-div{
 		margin-bottom: 30px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*End Responsive*/
 /*start page2*/
 .thailand-trip1{
 	background-image: url("../images2/First-img.png");

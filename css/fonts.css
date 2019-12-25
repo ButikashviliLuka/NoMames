@@ -11,120 +11,31 @@
     font-style: normal;
 }
 
-
-
-/*Merrieweather*/
-
+/*Mo zhara*/
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-BoldItalic.eot');
-    src: url('OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-BoldItalic.woff2') format('woff2'),
-        url('OpenSans-BoldItalic.woff') format('woff'),
-        url('OpenSans-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-ExtraBold.eot');
-    src: url('OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-ExtraBold.woff2') format('woff2'),
-        url('OpenSans-ExtraBold.woff') format('woff'),
-        url('OpenSans-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Light.eot');
-    src: url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-Light.woff2') format('woff2'),
-        url('OpenSans-Light.woff') format('woff'),
-        url('OpenSans-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-ExtraBoldItalic.eot');
-    src: url('OpenSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-ExtraBoldItalic.woff2') format('woff2'),
-        url('OpenSans-ExtraBoldItalic.woff') format('woff'),
-        url('OpenSans-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-SemiBold.eot');
-    src: url('OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-SemiBold.woff2') format('woff2'),
-        url('OpenSans-SemiBold.woff') format('woff'),
-        url('OpenSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Regular.eot');
-    src: url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-Regular.woff2') format('woff2'),
-        url('OpenSans-Regular.woff') format('woff'),
-        url('OpenSans-Regular.ttf') format('truetype');
+    font-family: 'Ma Shan Zheng';
+    src: url('MaShanZheng-Regular.eot');
+    src: url('MaShanZheng-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MaShanZheng-Regular.woff2') format('woff2'),
+        url('MaShanZheng-Regular.woff') format('woff'),
+        url('MaShanZheng-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+
+
+
+/*Lobster*/
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Bold.eot');
-    src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-Bold.woff2') format('woff2'),
-        url('OpenSans-Bold.woff') format('woff'),
-        url('OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'Lobster';
+    src: url('Lobster-Regular.eot');
+    src: url('Lobster-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lobster-Regular.woff2') format('woff2'),
+        url('Lobster-Regular.woff') format('woff'),
+        url('Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Italic.eot');
-    src: url('OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-Italic.woff2') format('woff2'),
-        url('OpenSans-Italic.woff') format('woff'),
-        url('OpenSans-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-SemiBoldItalic.eot');
-    src: url('OpenSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-SemiBoldItalic.woff2') format('woff2'),
-        url('OpenSans-SemiBoldItalic.woff') format('woff'),
-        url('OpenSans-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-LightItalic.eot');
-    src: url('OpenSans-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-LightItalic.woff2') format('woff2'),
-        url('OpenSans-LightItalic.woff') format('woff'),
-        url('OpenSans-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-
 
 
