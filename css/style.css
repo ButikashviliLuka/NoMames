@@ -81,7 +81,9 @@ nav ul li a{
 	background-image: url(../images/couples.png);
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: cover;
+	-o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 	z-index: 20;
