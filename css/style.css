@@ -80,14 +80,13 @@ nav ul li a{
 	height: 100vh;
 	overflow: hidden;
 	background-image: url(../images/couples.jpg);
-	background-position: top;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
   	-ms-background-size: cover;
  	-o-background-size: cover;
   	-moz-background-size: cover;
   	-webkit-background-size: cover;
-	background-attachment: fixed;
 	position: relative;
 	
 }
