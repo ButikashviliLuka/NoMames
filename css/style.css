@@ -259,9 +259,9 @@ nav ul li a{
 	-o-transition: 5s;
 	transition: 5s;
 	margin-left: 50%;
-	-webkit-transform: translate(-50%);
-	    -ms-transform: translate(-50%);
-	        transform: translate(-50%);
+	-webkit-transform: translate(-45%);
+	    -ms-transform: translate(-45%);
+	        transform: translate(-45%);
 	cursor: pointer;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
@@ -494,7 +494,6 @@ nav ul li a{
 	display: flex;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
-
 }
 .social-li{
 	margin-left: 6px;
@@ -583,6 +582,7 @@ nav ul li a{
 	}
 	.footer-contact-div{
 		margin-bottom: 30px;
+		margin-left: 90px;
 	}
 }
 @media only screen and (max-width: 730px) {
