@@ -34,6 +34,7 @@ nav{
 	width: 100%;
 	z-index: 99999999999;
 	background: #7ed6df;
+	box-shadow: 3px 3px 10px black;
 }
 nav ul{
 	list-style: none;
@@ -59,7 +60,7 @@ nav ul li:hover{
 }
 nav ul li a{
 	text-decoration: none;
-	color: #fff;
+	color: white;
 	font-size: 20px;
 }
 .menu-icon{
@@ -89,7 +90,7 @@ nav ul li a{
 	background-attachment: fixed;
 	position: relative;
 	
-}s
+}
 .main-page-p{
 	position: absolute;
 	left: 50%;
@@ -187,21 +188,6 @@ nav ul li a{
 	text-align: center;
 	font-family: 'Lobster', cursive;
 }
-/*about-us h1:after{
-	content: '';
-	display: none;
-	width: 100px;
-	height: 3px;
-	background-color: black;
-	margin-left: 50%;
-	transform: translate(-50%);
-	margin-top: 5px;
-	transform: 0.5s;
-}
-.about-us h1:hover:after{
-	display: block;
-	transform-origin: left;
-}*/
 .about-us p{
 	margin-top: 50px;
 	font-size: 24px;
@@ -218,7 +204,6 @@ nav ul li a{
 	margin: 40 0px;
 	text-align: center;
 	font-size: 25px;
-	font-family: 'Lobster', cursive;
 }
 .section-box{
 	width: 100%;
@@ -427,8 +412,8 @@ nav ul li a{
 	height: 200px;
 	background: white;
 	border-radius: 6px;
-	-webkit-box-shadow: 10px 10px 10px 10px #403131;
-	        box-shadow: 10px 10px 10px 10px #403131;
+	-webkit-box-shadow: 5px 5px 10px #7ed6df;
+	        box-shadow: 5px 5px 10px #7ed6df;
 }
 .opinions-div div p{
 	margin-top: 50px;
@@ -457,11 +442,7 @@ nav ul li a{
 	display: flex;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
-	background: white;
-	background: #d1d8e0;;
-}
-.footer-contact-div{
-
+	background: #d1d8e0;
 }
 .footer div h2{
 	font-weight: bold;
@@ -573,163 +554,21 @@ nav ul li a{
 		margin-bottom: 30px;
 	}
 }
+@media only screen and (max-width: 730px) {
+	.footer-ul:last-child{
+		margin-top: 30px;
+		margin-left: 0px;
+		
+	}
+	.footer-ul-2{
+		margin-top: 30px;
+	}
+	.footer-ul1{
+		margin-left: 30px;
+	}
+}
 /*End Responsive*/
-/*start page2*/
-.thailand-trip1{
-	background-image: url("../images2/First-img.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-.thailand-trip2{
-	background-image: url("../images2/Second-img.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-.thailand-trip3{
-	background-image: url("../images2/Third-img.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-.thailand-trip4{
-	background-image: url("../images2/Fourth-img.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-.thailand-trip5{
-	background-image: url("../images2/First-img.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-.thailand-trip1 h1,
-.thailand-trip2 h1,
-.thailand-trip3 h1,
-.thailand-trip4 h1,
-.thailand-trip5 h1{
-		font-size: 60px;
-		margin-bottom: 150px;
-		background: white;
-		border: 2px ridge black;
 
-}
-.thailand-trip1 h2,
-.thailand-trip2 h2,
-.thailand-trip3 h2,
-.thailand-trip4 h2,
-.thailand-trip5 h2{
-		font-size: 30px;
-		margin-bottom: 18px;
-		background: white;
-
-}
-.thailand-trip1 h3,
-.thailand-trip2 h3,
-.thailand-trip3 h3,
-.thailand-trip4 h3,
-.thailand-trip5 h3{
-		font-size: 30px;
-		margin-bottom: 18px;
-		background: white;
-
-}
-.thailand-trip1 h4,
-.thailand-trip2 h4,
-.thailand-trip3 h4,
-.thailand-trip4 h4,
-.thailand-trip5 h4{
-		font-size: 30px;
-		margin: 0 40px;
-		background: white;
-
-}
-
-
-/*End page2*/
 
 
 /*aniamtions*/
